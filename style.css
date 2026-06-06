@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Aref Ruqaa', serif;
+    background: #f3ead7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 20px;
+    /* مهم للموبايل */
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+    max-width: 420px;
+
+    background: #f7f1e3;
+    border-radius: 25px;
+    padding: 28px;
+
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border: 2px solid #c8a24a;
+
+    box-sizing: border-box;
+}
+
+.gold-line {
+    height: 3px;
+    width: 60%;
+    margin: 0 auto 20px;
+    background: linear-gradient(to right, transparent, #c8a24a, transparent);
+}
+
+.logo {
+    width: 160px;
+    max-width: 70%;
+    height: auto;
+
+    border-radius: 20px;
+    margin-bottom: 15px;
+    border: 2px solid #c8a24a;
+}
+
+h1 {
+    color: #4a3b2a;
+    font-size: 25px;
+    margin: 10px 0;
+    letter-spacing: 0.5px;
+}
+
+p {
+    color: #6b5b4b;
+    margin-bottom: 25px;
+    font-size: 14px;
+
+}
+
+.btn {
+    display: block;
+    margin: 14px 0;
+    padding: 16px 18px;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: #3f2f22;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+
+    background: linear-gradient(145deg, #f5ecd8, #e9d7b3);
+
+    border: 1px solid #c8a24a;
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn:active {
+    transform: scale(0.97);
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.15),
+        inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+}
